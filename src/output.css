@@ -288,6 +288,9 @@
   .max-w-xl {
     max-width: var(--container-xl);
   }
+  .flex-1 {
+    flex: 1;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
