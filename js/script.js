@@ -101,6 +101,7 @@ const displayLoadWord = (words) => {
                 <div class="flex items-center justify-between mt-10">
                   <!-- Info Button -->
                   <button
+                  onclick="my_modal_5.showModal()"
                     class="w-10 h-10 sm:w-12 sm:h-12 
                     rounded-xl 
                     bg-[#eef5ff] 
