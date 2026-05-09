@@ -71,83 +71,126 @@ const displayLoadWord = (words) => {
     words.forEach(word => {
         const wordCard = document.createElement("div")
         wordCard.innerHTML = `
-        <div
-                class="bg-gradient-to-br from-white via-[#fffdf7] to-[#f8f4e8] 
-                border-2 border-[#d4af37] 
-                rounded-2xl 
-                p-5 sm:p-6 lg:p-8 
-                min-h-[260px] 
-                flex flex-col justify-between 
-                shadow-lg hover:shadow-2xl 
-                hover:-translate-y-1 
-                transition-all duration-300"
-              >
-                <!-- Top Content -->
-                <div class="text-center">
-                  <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#111] mb-3">
-                    ${word.word ? word.word : "শব্দ পাওয়া যায়নি" }
-                  </h2>
+<div
+  class="group relative overflow-hidden rounded-[28px] 
+  bg-gradient-to-br from-[#0F172A] via-[#111827] to-[#1E293B]
+  border border-white/10
+  p-5 sm:p-7
+  min-h-[320px]
+  flex flex-col justify-between
+  shadow-2xl shadow-black/20
+  hover:-translate-y-2
+  hover:border-cyan-400/40
+  transition-all duration-500"
+>
 
-                  <p class="text-xs sm:text-sm lg:text-base text-[#555] font-medium mb-5">
-                    Meaning /Pronunciation
-                  </p>
+  <!-- Glow -->
+  <div
+    class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 blur-3xl rounded-full">
+  </div>
 
-                  <h3 class="text-lg sm:text-2xl lg:text-3xl font-semibold text-[#444] leading-relaxed">
-                    "${word.meaning ? word.meaning : "অর্থ পাওয়া যায়নি "} / ${word.pronunciation ? word.pronunciation : "প্রোনাউনসেশন পাওয়া যায়নি "}"
-                  </h3>
-                </div>
+  <!-- Top -->
+  <div class="relative z-10 text-center">
 
-                <!-- Buttons -->
-                <div class="flex items-center justify-between mt-10">
-                  <!-- Info Button -->
-                  <button
-                  onclick="my_modal_5.showModal()"
-                    class="w-10 h-10 sm:w-12 sm:h-12 
-                    rounded-xl 
-                    bg-[#eef5ff] 
-                    hover:bg-[#dbeafe] 
-                    shadow-md 
-                    hover:scale-110 
-                    transition-all duration-300 
-                    flex items-center justify-center"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="w-4 h-4 sm:w-5 sm:h-5 text-[#374151]"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 4a1.25 1.25 0 110 2.5A1.25 1.25 0 0112 6zm1.5 12h-3v-1.5h1V11h-1V9.5h2.5V16h.5V18z"
-                      />
-                    </svg>
-                  </button>
+    <!-- Badge -->
+    <div
+      class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full 
+      bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 
+      text-xs font-medium mb-5">
 
-                  <!-- Volume Button -->
-                  <button
-                    class="w-10 h-10 sm:w-12 sm:h-12 
-                    rounded-xl 
-                    bg-[#eef5ff] 
-                    hover:bg-[#dbeafe] 
-                    shadow-md 
-                    hover:scale-110 
-                    transition-all duration-300 
-                    flex items-center justify-center"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="w-4 h-4 sm:w-5 sm:h-5 text-[#374151]"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M3 10v4h4l5 5V5L7 10H3zm13.5 2a4.5 4.5 0 00-2.5-4.03v8.06A4.5 4.5 0 0016.5 12zm0-9v2.06a9 9 0 010 17.88V21a7 7 0 000-14z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-        `
+      📘 Vocabulary
+
+    </div>
+
+    <!-- Word -->
+    <h2
+      class="text-3xl sm:text-4xl font-black text-white mb-4 tracking-wide">
+
+      ${word.word ? word.word : "শব্দ পাওয়া যায়নি"}
+
+    </h2>
+
+    <!-- Label -->
+    <p
+      class="text-slate-400 text-sm uppercase tracking-[3px] mb-5">
+
+      Meaning / Pronunciation
+
+    </p>
+
+    <!-- Meaning -->
+    <h3
+      class="text-lg sm:text-2xl font-semibold text-slate-200 leading-relaxed">
+
+      "${word.meaning ? word.meaning : "অর্থ পাওয়া যায়নি"}"
+
+    </h3>
+
+    <!-- Pronunciation -->
+    <p
+      class="mt-4 text-cyan-300 text-base sm:text-lg font-medium">
+
+      ${word.pronunciation ? word.pronunciation : "প্রোনাউনসেশন পাওয়া যায়নি"}
+
+    </p>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="relative z-10 flex items-center justify-between mt-10">
+
+    <!-- Info Button -->
+    <button
+      onclick="my_modal_5.showModal()"
+      class="w-12 h-12 sm:w-14 sm:h-14
+      rounded-2xl
+      bg-white/5
+      border border-white/10
+      hover:border-cyan-400/50
+      hover:bg-cyan-500/10
+      backdrop-blur-xl
+      flex items-center justify-center
+      hover:scale-110
+      transition-all duration-300">
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-5 h-5 text-cyan-300"
+        fill="currentColor"
+        viewBox="0 0 24 24">
+
+        <path
+          d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 4a1.25 1.25 0 110 2.5A1.25 1.25 0 0112 6zm1.5 12h-3v-1.5h1V11h-1V9.5h2.5V16h.5V18z"/>
+      </svg>
+
+    </button>
+
+    <!-- Sound Button -->
+    <button
+      class="w-12 h-12 sm:w-14 sm:h-14
+      rounded-2xl
+      bg-gradient-to-r from-cyan-500 to-blue-500
+      shadow-xl shadow-cyan-500/20
+      flex items-center justify-center
+      hover:scale-110
+      transition-all duration-300">
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-5 h-5 text-white"
+        fill="currentColor"
+        viewBox="0 0 24 24">
+
+        <path
+          d="M3 10v4h4l5 5V5L7 10H3zm13.5 2a4.5 4.5 0 00-2.5-4.03v8.06A4.5 4.5 0 0016.5 12zm0-9v2.06a9 9 0 010 17.88V21a7 7 0 000-14z"/>
+      </svg>
+
+    </button>
+
+  </div>
+
+</div>
+`
         wordCardShow.appendChild(wordCard)
     })
 }
