@@ -4,74 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Janala</title>
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="src/output.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-[#f7f7f7]">
+
+  <body class="bg-[#8f8f8f]">
     <!-- Main Container -->
-    <div class="mx-auto min-h-screen border-0 border-blue-0">
+    <div class="mx-auto min-h-screen">
       <!-- Navbar -->
-      <nav>
-        <div>
-          <!-- Navbar -->
-          <nav
-            class="flex items-center justify-between px-8 py-4 bg-[#e9edf2] border-b border-gray-300"
+      <nav
+        class="flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 py-4 bg-[#e9edf2] border-b border-gray-300 gap-4 lg:gap-0"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <h1 class="font-semibold text-[15px] sm:text-lg text-center">
+            English <span class="text-[#00A8FF]">📘</span> জানালা
+          </h1>
+        </div>
+
+        <!-- Nav Buttons -->
+        <div
+          class="flex flex-wrap items-center justify-center gap-3 w-full lg:w-auto"
+        >
+          <button
+            class="border border-[#422AD5] text-[#422AD5] text-sm px-4 py-2 rounded hover:bg-[#422AD5] hover:text-white transition"
           >
-            <!-- Logo -->
-            <div class="flex items-center gap-2">
-              <h1 class="font-semibold text-[15px]">
-                English <span class="text-[#00A8FF]">📘</span> জানালা
-              </h1>
-            </div>
+            ❓ FAQ
+          </button>
 
-            <!-- Nav Buttons -->
-            <div class="flex items-center gap-3">
-              <button
-                class="border border-[#422AD5] text-[#422AD5] text-sm px-4 py-2 rounded hover:bg-[#422AD5] hover:text-white transition"
-              >
-                ❓ FAQ
-              </button>
+          <button
+            class="border border-[#422AD5] text-[#422AD5] text-sm px-4 py-2 rounded hover:bg-[#422AD5] hover:text-white transition"
+          >
+            📚 Learn
+          </button>
 
-              <button
-                class="border border-[#422AD5] text-[#422AD5] text-sm px-4 py-2 rounded hover:bg-[#422AD5] hover:text-white transition"
-              >
-                📚 Learn
-              </button>
-
-              <button
-                class="border border-[#422AD5] text-[#422AD5] text-sm px-4 py-2 rounded hover:bg-[#422AD5] hover:text-white transition"
-              >
-                🔓 Logout
-              </button>
-            </div>
-          </nav>
+          <button
+            class="border border-[#422AD5] text-[#422AD5] text-sm px-4 py-2 rounded hover:bg-[#422AD5] hover:text-white transition"
+          >
+            🔓 Logout
+          </button>
         </div>
       </nav>
+
       <!-- Hero Section -->
       <section
-        class="flex flex-col-reverse lg:flex-row items-center justify-between px-10 lg:px-20 py-20 gap-16"
+        class="flex flex-col-reverse lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-20 py-10 lg:py-20 gap-10 lg:gap-16"
       >
         <!-- Left Content -->
-        <div class="max-w-xl">
-          <h1 class="text-5xl font-bold leading-tight mb-6">
+        <div class="max-w-xl text-center lg:text-left">
+          <h1
+            class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6"
+          >
             <span class="text-[#00A8FF]">English</span>
             <span class="text-black">is Easy!!</span>
           </h1>
 
-          <p class="text-gray-700 leading-8 text-lg mb-8">
+          <p
+            class="text-gray-700 leading-7 lg:leading-8 text-base lg:text-lg mb-8"
+          >
             আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
             আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
             অন্য এক Level এ।
           </p>
 
           <!-- Form -->
-          <div class="space-y-4 w-full max-w-sm">
+          <div class="space-y-4 w-full max-w-sm mx-auto lg:mx-0">
             <input
               type="text"
               placeholder="Enter Your Name"
@@ -85,7 +90,7 @@
             />
 
             <button
-              class="bg-[#422AD5] hover:bg-[#321db4] text-white px-6 py-3 rounded font-medium transition"
+              class="bg-[#422AD5] hover:bg-[#321db4] text-white px-6 py-3 rounded font-medium transition w-full sm:w-auto"
             >
               Get Started
             </button>
@@ -93,20 +98,18 @@
         </div>
 
         <!-- Right Image -->
-        <div class="">
-          <!-- Circle -->
-          <div>
-            <!-- Demo Image -->
-            <img
-              src="assets/hero-student.png"
-              alt="assets/hero-student.pngStudent"
-            />
-          </div>
+        <div class="w-full flex justify-center">
+          <img
+            class="w-[280px] sm:w-[380px] lg:w-[500px] max-w-full"
+            src="assets/hero-student.png"
+            alt="Student"
+          />
         </div>
       </section>
+
       <!-- Vocabulary Section -->
-      <section class="pb-16 text-center">
-        <h2 class="text-4xl font-bold mb-10">
+      <section class="pb-16 text-center px-4">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-10">
           <span class="text-[#00A8FF]">Let's</span>
           Learn Vocabularies
         </h2>
@@ -118,63 +121,54 @@
         ></div>
 
         <div id="dunamicPart" class="mt-10">
-          <!-- select lesson part -->
+          <!-- Default Card -->
           <div id="defultCardText" class="max-w-6xl mx-auto">
-            <div class="bg-[#f3f3f3] rounded-2xl py-16 px-6 text-center">
-              <!-- Small Text -->
+            <div
+              class="bg-[#f3f3f3] rounded-2xl py-12 lg:py-16 px-4 sm:px-6 text-center"
+            >
               <p class="text-gray-400 text-sm mb-4">
                 আপনি এখনো কোন Lesson Select করেন নি
               </p>
 
-              <!-- Main Text -->
-              <h2 class="text-3xl md:text-4xl font-semibold text-[#111]">
+              <h2
+                class="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#111]"
+              >
                 একটি Lesson Select করুন।
               </h2>
             </div>
           </div>
 
-          <!-- emty lesson tex -->
-          <div id="emtyLessonText">
-            
-          </div>
-          <!-- emty lesson tex -->
+          <!-- Empty Lesson -->
+          <div id="emtyLessonText"></div>
 
-          <!-- word show card system -->
-
-          <!-- Vocabulary Cards Container -->
-          <div class="bg-[#f3f3f3] rounded-2xl p-5">
-            <!-- Grid -->
+          <!-- Vocabulary Cards -->
+          <div class="bg-[#f3f3f3] rounded-2xl p-5 mt-6">
             <div
               id="wordCardShow"
-              class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5"
-            >
-              <!-- Card -->
-
-              <!-- Card -->
-            </div>
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
+            ></div>
           </div>
-          <!-- word show card system -->
         </div>
       </section>
 
       <!-- FAQ SECTION -->
-      <section class="py-20 bg-[#f7f7f7]">
-        <div class="max-w-6xl mx-auto px-4">
+      <section class="py-14 lg:py-20 bg-[#f7f7f7] px-4">
+        <div class="max-w-6xl mx-auto">
           <!-- Title -->
-          <h2 class="text-center text-3xl lg:text-5xl font-bold mb-14">
+          <h2 class="text-center text-3xl lg:text-5xl font-bold mb-10 lg:mb-14">
             <span class="text-[#00A8FF]">Frequently</span>
             Asked Questions
           </h2>
 
           <!-- FAQ Container -->
           <div class="space-y-4">
-            <!-- Item 1 -->
+            <!-- Item -->
             <details
               class="group bg-[#f1f1f1] rounded-xl p-5 cursor-pointer"
               open
             >
-              <summary class="flex items-center justify-between list-none">
-                <span class="font-medium text-[15px] lg:text-base text-[#111]">
+              <summary class="flex items-center justify-between list-none gap-4">
+                <span class="font-medium text-sm lg:text-base text-[#111]">
                   1. How can I start learning English on this website?
                 </span>
 
@@ -191,104 +185,7 @@
 
               <p class="mt-4 text-gray-500 text-sm leading-7">
                 You can start by exploring our beginner lessons, interactive
-                exercises, and quizzes. We also offer structured courses to
-                guide you step by step.
-              </p>
-            </details>
-
-            <!-- Item 2 -->
-            <details class="group bg-[#f1f1f1] rounded-xl p-5 cursor-pointer">
-              <summary class="flex items-center justify-between list-none">
-                <span class="font-medium text-[15px] lg:text-base text-[#111]">
-                  2. Is this website free to use?
-                </span>
-
-                <span class="text-xl font-bold text-gray-500 group-open:hidden">
-                  +
-                </span>
-
-                <span
-                  class="text-xl font-bold text-gray-500 hidden group-open:block"
-                >
-                  -
-                </span>
-              </summary>
-
-              <p class="mt-4 text-gray-500 text-sm leading-7">
-                Yes, most of our lessons and vocabulary exercises are completely
-                free for learners.
-              </p>
-            </details>
-
-            <!-- Item 3 -->
-            <details class="group bg-[#f1f1f1] rounded-xl p-5 cursor-pointer">
-              <summary class="flex items-center justify-between list-none">
-                <span class="font-medium text-[15px] lg:text-base text-[#111]">
-                  3. Do I need to create an account?
-                </span>
-
-                <span class="text-xl font-bold text-gray-500 group-open:hidden">
-                  +
-                </span>
-
-                <span
-                  class="text-xl font-bold text-gray-500 hidden group-open:block"
-                >
-                  -
-                </span>
-              </summary>
-
-              <p class="mt-4 text-gray-500 text-sm leading-7">
-                Creating an account helps you track your learning progress and
-                access personalized features.
-              </p>
-            </details>
-
-            <!-- Item 4 -->
-            <details class="group bg-[#f1f1f1] rounded-xl p-5 cursor-pointer">
-              <summary class="flex items-center justify-between list-none">
-                <span class="font-medium text-[15px] lg:text-base text-[#111]">
-                  4. How can I build my English vocabulary?
-                </span>
-
-                <span class="text-xl font-bold text-gray-500 group-open:hidden">
-                  +
-                </span>
-
-                <span
-                  class="text-xl font-bold text-gray-500 hidden group-open:block"
-                >
-                  -
-                </span>
-              </summary>
-
-              <p class="mt-4 text-gray-500 text-sm leading-7">
-                Practice daily with vocabulary lessons, quizzes, reading
-                exercises, and real-life examples.
-              </p>
-            </details>
-
-            <!-- Item 5 -->
-            <details class="group bg-[#f1f1f1] rounded-xl p-5 cursor-pointer">
-              <summary class="flex items-center justify-between list-none">
-                <span class="font-medium text-[15px] lg:text-base text-[#111]">
-                  5. Do you offer certificates for completed courses?
-                </span>
-
-                <span class="text-xl font-bold text-gray-500 group-open:hidden">
-                  +
-                </span>
-
-                <span
-                  class="text-xl font-bold text-gray-500 hidden group-open:block"
-                >
-                  -
-                </span>
-              </summary>
-
-              <p class="mt-4 text-gray-500 text-sm leading-7">
-                Yes, selected premium courses provide certificates after
-                successful completion.
+                exercises, and quizzes.
               </p>
             </details>
           </div>
@@ -296,21 +193,22 @@
       </section>
 
       <!-- FOOTER -->
-      <footer class="border-t border-red-100 bg-white py-20">
-        <div class="mx-auto px-12">
+      <footer class="border-t border-red-100 bg-white py-14 lg:py-20">
+        <div class="mx-auto px-4 sm:px-6 lg:px-12">
           <div
-            class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-12"
+            class="flex flex-col lg:flex-row justify-between items-center lg:items-end gap-10 text-center lg:text-left"
           >
             <!-- Left -->
             <div>
-              <!-- Logo -->
-              <div class="flex items-center gap-2 mb-5">
+              <div class="flex items-center justify-center lg:justify-start gap-2 mb-5">
                 <h2 class="font-semibold text-xl">
                   English <span class="text-[#00A8FF]">📘</span> জানালা
                 </h2>
               </div>
 
-              <h3 class="font-semibold text-lg mb-3">ইংরেজি শিখুন সহজে</h3>
+              <h3 class="font-semibold text-lg mb-3">
+                ইংরেজি শিখুন সহজে
+              </h3>
 
               <p class="text-gray-500 text-sm">
                 Providing ED-Tech Applications since 2025
@@ -318,62 +216,34 @@
             </div>
 
             <!-- Right -->
-            <div class="lg:text-right">
+            <div>
               <p class="text-gray-400 uppercase text-xs tracking-[3px] mb-5">
                 Follow Us
               </p>
 
               <!-- Social Icons -->
-              <div class="flex items-center gap-4">
-                <!-- Facebook -->
+              <div
+                class="flex items-center justify-center lg:justify-end gap-4"
+              >
                 <a
                   href="#"
                   class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#00A8FF] hover:text-white transition"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M22 12.07C22 6.477 17.523 2 12 2S2 6.477 2 12.07c0 5.017 3.657 9.173 8.438 9.93v-7.03H7.898v-2.9h2.54V9.845c0-2.522 1.492-3.917 3.777-3.917 1.094 0 2.238.196 2.238.196v2.476h-1.26c-1.243 0-1.63.776-1.63 1.572v1.888h2.773l-.443 2.9h-2.33V22c4.78-.757 8.437-4.913 8.437-9.93z"
-                    />
-                  </svg>
+                  F
                 </a>
 
-                <!-- Youtube -->
                 <a
                   href="#"
                   class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#00A8FF] hover:text-white transition"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M21.582 7.2a2.504 2.504 0 0 0-1.76-1.77C18.253 5 12 5 12 5s-6.253 0-7.822.43A2.504 2.504 0 0 0 2.418 7.2C2 8.78 2 12 2 12s0 3.22.418 4.8a2.504 2.504 0 0 0 1.76 1.77C5.747 19 12 19 12 19s6.253 0 7.822-.43a2.504 2.504 0 0 0 1.76-1.77C22 15.22 22 12 22 12s0-3.22-.418-4.8zM10 15.5v-7l6 3.5-6 3.5z"
-                    />
-                  </svg>
+                  Y
                 </a>
 
-                <!-- Instagram -->
                 <a
                   href="#"
                   class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#00A8FF] hover:text-white transition"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M7.75 2h8.5A5.756 5.756 0 0 1 22 7.75v8.5A5.756 5.756 0 0 1 16.25 22h-8.5A5.756 5.756 0 0 1 2 16.25v-8.5A5.756 5.756 0 0 1 7.75 2zm0 1.5A4.256 4.256 0 0 0 3.5 7.75v8.5A4.256 4.256 0 0 0 7.75 20.5h8.5a4.256 4.256 0 0 0 4.25-4.25v-8.5A4.256 4.256 0 0 0 16.25 3.5h-8.5zm8.75 1.25a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"
-                    />
-                  </svg>
+                  I
                 </a>
               </div>
             </div>
@@ -381,8 +251,6 @@
         </div>
       </footer>
     </div>
-
-
 
     <script src="js/script.js"></script>
   </body>

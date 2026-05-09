@@ -2,3 +2,160 @@
   background-color: #422AD5;
   color: white;
 }
+
+/* BODY */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+nav {
+  background: linear-gradient(90deg, #111827, #1e3a8a);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* LOGO */
+nav h1 {
+  color: #ffffff;
+}
+
+/* NAV BUTTON */
+nav button {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  transition: 0.3s ease;
+}
+
+nav button:hover {
+  background: linear-gradient(90deg, #0ea5e9, #2563eb);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3);
+}
+
+/* HERO SECTION */
+section h1 {
+  color: #ffffff;
+}
+
+section p {
+  color: #cbd5e1;
+}
+
+/* INPUT FIELD */
+input {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+}
+
+/* GET STARTED BUTTON */
+button.bg-\[\#422AD5\] {
+  background: linear-gradient(90deg, #0ea5e9, #2563eb);
+  border: none;
+}
+
+button.bg-\[\#422AD5\]:hover {
+  background: linear-gradient(90deg, #0284c7, #1d4ed8);
+  transform: scale(1.03);
+}
+
+/* VOCAB SECTION */
+#dunamicPart .bg-\[\#f3f3f3\] {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#dunamicPart h2,
+#dunamicPart p {
+  color: white;
+}
+
+/* FAQ SECTION */
+.bg-\[\#f7f7f7\] {
+  background: linear-gradient(180deg, #0f172a, #111827);
+}
+
+/* FAQ CARD */
+details {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.3s;
+}
+
+details:hover {
+  transform: translateY(-3px);
+  border-color: #38bdf8;
+}
+
+details summary span,
+details p {
+  color: #e2e8f0 !important;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(90deg, #111827, #0f172a);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+footer h2,
+footer h3 {
+  color: white;
+}
+
+footer p {
+  color: #94a3b8;
+}
+
+/* SOCIAL ICON */
+footer a {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer a:hover {
+  background: linear-gradient(90deg, #0ea5e9, #2563eb);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* CARD HOVER */
+#wordCardShow > div {
+  transition: 0.3s ease;
+}
+
+#wordCardShow > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#0ea5e9, #2563eb);
+  border-radius: 999px;
+}
